@@ -1,0 +1,17 @@
+version: 2018-0702
+label: Markeet - Cart
+description: This is a shopping cart service for markeet
+
+applications:
+  - name: markeet-cart
+    labels:
+      - key: demo-label
+        value: demo-value
+
+    container_image: umurgdk/markeet
+    #container_registry_username: umurgdk
+    #container_registry_password: *******
+    container_code_dir: .
+    container_code_repo: https://github.com/umurgdk/markeet
+
+
